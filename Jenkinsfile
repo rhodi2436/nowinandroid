@@ -1,9 +1,5 @@
 pipeline {
-  agent {
-    docker {
-        image 'cimg/android:2023.09.1'
-    }
-  }
+  agent any
   environment {
     APP_NAME = 'nowinandroid'
   }
