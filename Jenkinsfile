@@ -23,7 +23,9 @@ pipeline {
       }
     }
     stage('Deploy') {
-      echo 'Deploy skip'
+        steps {
+            echo 'Deploying...'
+        }
     }
   }
   post {
